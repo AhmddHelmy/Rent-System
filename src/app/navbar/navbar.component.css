@@ -1,0 +1,51 @@
+.navbar{
+  background-color: #FFF !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ico-bg{
+  background-color: var(--light-grey);
+}
+
+.ico-color{
+  color: var(--dark-green);
+}
+
+.dot-icon{
+  position: relative;
+  display: inline-block;
+}
+
+.dot-icon::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--light-green);
+  z-index: 1;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  width: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.search-input.active {
+  width: 200px;
+  opacity: 1;
+  overflow: visible;
+}
+
+.input-group-append{
+  background-color: var(--main-yellow);
+  overflow: hidden;
+}
