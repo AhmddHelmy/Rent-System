@@ -1,0 +1,70 @@
+h2 {
+  color: var(--main-yellow);
+}
+
+.green-bg {
+  background-color: var(--dark-green);
+  border-radius: 0;
+  color: #DEDEDE;
+}
+
+.green-btn{
+  background-color: transparent;
+  border-radius: 6px;
+  color: var(--light-green);
+  border: 1px solid var(--light-green);
+}
+
+.table-content {
+  border: 1px solid #000;
+}
+
+.yellow-btn {
+  background-color: transparent;
+  border-radius: 6px;
+  color: var(--main-yellow);
+  border: 1px solid var(--main-yellow);
+}
+
+.yellow-bg {
+  background-color: var(--main-yellow);
+  color: #FFF;
+}
+
+.buttons-group {
+  display: flex;
+  padding: 14px 22px;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  box-shadow: 0 2px 4px rgba(0.2, 0.2, 0.2, 0.2);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-btn{
+  background-color: #E8E8E8;
+}
+
+.details {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}

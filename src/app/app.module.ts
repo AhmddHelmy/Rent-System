@@ -14,6 +14,15 @@ import { NumbersFilesComponent } from './numbers-files/numbers-files.component';
 import { QueriesComponent } from './queries/queries.component';
 import { ReportsComponent } from './reports/reports.component';
 import { SystemComponent } from './system/system.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
+
+
 
 @NgModule({
   declarations: [
@@ -32,7 +41,14 @@ import { SystemComponent } from './system/system.component';
   imports: [
     BrowserModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatIconModule,
+    MatDividerModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

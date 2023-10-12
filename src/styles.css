@@ -13,6 +13,6 @@ body {
   background-color: #F9F9F9;
 }
 
-section{
-  margin-right: 250px;
+mat-drawer-content {
+  padding-right: 8.5%;
 }
