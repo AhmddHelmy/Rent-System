@@ -10,4 +10,9 @@
 
 body {
   font-family: 'Cairo', sans-serif;
+  background-color: #F9F9F9;
+}
+
+section{
+  margin-right: 250px;
 }

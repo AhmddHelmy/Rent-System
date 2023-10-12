@@ -1,0 +1,21 @@
+.side-bar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 12%;
+  background-color: var(--dark-green);
+}
+
+.side-bar-img{
+  width: 45%;
+}
+
+.ico-bg {
+  background-color: var(--main-yellow);
+}
+
+.ico-color {
+  color: var(--main-yellow);
+}
+
+.icon-container {
+  width: 55%;
+}
