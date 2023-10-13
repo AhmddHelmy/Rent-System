@@ -1,28 +1,22 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 flex-row-reverse">
-        <li class="nav-item">
-          <a routerLink="/messeges" class="nav-link ico-bg rounded me-2 dot-icon" aria-current="page" href="#"><i class="fa-solid fa-envelope fa-lg ico-color"></i></a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/notifications" class="nav-link ico-bg rounded dot-icon me-4" href="#"><i class="fa-solid fa-bell fa-xl ico-color"></i></a>
-        </li>
-        <div class="search-container ms-1">
-          <div class="input-group">
-            <input type="text" class="form-control search-input rounded-start-1" placeholder="ابحث..." [ngClass]="{'active': isSearchInputActive}"(focus)="toggleSearchInput(true)" (blur)="toggleSearchInput(false)">
-            <li class="nav-item input-group-append rounded">
-              <a class="btn btn-outline-secondary nav-link" type="button" (click)="toggleSearchInput(!isSearchInputActive)">
-                <i class="fa-solid fa-magnifying-glass fa-xl text-white"></i>
-              </a>
-            </li>
-          </div>
+    <ul class="navbar-nav flex-row-reverse me-auto">
+      <li class="nav-item">
+        <a routerLink="/messeges" class="nav-link ico-bg rounded me-2 dot-icon" aria-current="page" href="#"><i class="fa-solid fa-envelope fa-lg ico-color"></i></a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/notifications" class="nav-link ico-bg rounded dot-icon me-4" href="#"><i class="fa-solid fa-bell fa-xl ico-color"></i></a>
+      </li>
+      <div class="search-container ms-1">
+        <div class="input-group" (mouseenter)="toggleSearchInput(true)" (mouseleave)="toggleSearchInput(false)">
+          <input type="text" class="form-control search-input rounded-start-1" placeholder="ابحث..." [ngClass]="{'active': isSearchInputActive}">
+          <li class="nav-item input-group-append rounded">
+            <a class="btn btn-outline-secondary nav-link" type="button" (click)="toggleSearchInput(!isSearchInputActive)">
+              <i class="fa-solid fa-magnifying-glass fa-xl text-white"></i>
+            </a>
+          </li>
         </div>
-      </ul>
-    </div>
+      </div>
+    </ul>
   </div>
 </nav>

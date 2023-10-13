@@ -10,6 +10,8 @@ export class HomeComponent {
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
   ngOnInit() {
+    
+
     const dropdownButton = this.el.nativeElement.querySelector('.dropdownButton');
     const icon = this.el.nativeElement.querySelector('.icon');
     const myDropdown = this.el.nativeElement.querySelector('.myDropdown');
